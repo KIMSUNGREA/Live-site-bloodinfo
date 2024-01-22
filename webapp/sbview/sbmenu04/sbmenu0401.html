@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="target-densitydpi=medium-dpi, width=750">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+    <title>Smart Bims</title>
+    <link rel="stylesheet" href="../../css/sbcss/reset.css">
+    <link rel="stylesheet" href="../../css/sbcss/style.css">
+    <link rel="stylesheet" href="../../css/sbcss/jquery-ui.min.css">
+    <link rel="stylesheet" href="../../css/sbcss/jquery-ui.css">
+    <link rel="stylesheet" href="../../css/sbcss/swiper.min.css">
+
+    <script src="../../js/sbjs/jquery-3.6.4.min.js"></script>
+    <script src="../../js/sbjs/swiper.min.js"></script>
+    <script src="../../js/sbjs/jquery-ui.min.js"></script>
+    <script src="../../js/sbjs/common.js"></script>
+</head>
+<body>
+    <div id="wrap">
+        <header>
+            <a href="javascript:;" class="back_btn"><img src="../../images/sbcom/header_back_icon.png" alt=""></a>
+            <h1 class="page_tit">성분채혈결과입력</h1>
+            <a href="javascript:;" class="home_btn"><img src="../../images/sbcom/header_home_icon.png" alt=""></a>
+        </header>
+        <div class="main_wrap pt_none">
+            <div class="search_box">
+                <p>헌혈자 바코드</p>
+                <input type="text">
+                <a href="javascript:;">취소</a>
+            </div>
+            <div class="blood_donor">
+                <dl>
+                    <dt>- 헌혈자 성명</dt>
+                    <dd>홍길동</dd>
+                </dl>
+                <dl>
+                    <dt>- 성분채혈기종</dt>
+                    <dd>MCS+</dd>
+                </dl>
+            </div>
+            <div class="sample_box">
+                <p class="red">성분채혈결과지</p>
+                <div class="code_list pheresis">
+                    <dl>
+                        <dt>Used AC</dt>
+                        <dd class="th">
+                            <input type="text" class="code_num">
+                        </dd>
+                    </dl>
+                    <dl>
+                        <dt>Cycle Num</dt>
+                        <dd class="th">
+                            <input type="text" class="code_num">
+                        </dd>
+                    </dl>
+                    <dl>
+                        <dt>Time</dt>
+                        <dd class="th">
+                            <input type="text" class="code_num">
+                        </dd>
+                    </dl>
+                    <dl>
+                        <dt>PLT Vol.</dt>
+                        <dd class="th">
+                            <input type="text" class="code_num">
+                        </dd>
+                    </dl>
+                    <dl>
+                        <dt>Proc.Vol</dt>
+                        <dd class="th">
+                            <input type="text" class="code_num">
+                        </dd>
+                    </dl>
+                    <dl>
+                        <dt>Est.yield</dt>
+                        <dd class="th">
+                            <input type="text" class="code_num">
+                        </dd>
+                    </dl>
+                </div>
+            </div>
+            <div class="check_box center">
+                <button type="button" class="check">저장</button>
+            </div>
+        </div>
+        <!-- <div class="main_wrap pt_none">
+            <div class="on_off_box">
+                <div class="quick_btn">
+                    <div class="quick_used">
+                        <p>Clumper</p>
+                        <div class="wrapper">
+                            <input type="checkbox" id="switch">
+                            <label for="switch" class="switch_label">
+                            <span class="onf_btn"></span>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <div class="quick_btn">
+                    <div class="quick_used">
+                        <p>혈관수축</p>
+                        <div class="wrapper">
+                            <input type="checkbox" id="switch2">
+                            <label for="switch2" class="switch_label">
+                            <span class="onf_btn"></span>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <div class="quick_btn">
+                    <div class="quick_used">
+                        <p>VVR</p>
+                        <div class="wrapper">
+                            <input type="checkbox" id="switch3">
+                            <label for="switch3" class="switch_label">
+                            <span class="onf_btn"></span>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <div class="quick_btn">
+                    <div class="quick_used">
+                        <p>AC reaction</p>
+                        <div class="wrapper">
+                            <input type="checkbox" id="switch4">
+                            <label for="switch4" class="switch_label">
+                            <span class="onf_btn"></span>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <div class="quick_btn">
+                    <div class="quick_used">
+                        <p>Kit 불량</p>
+                        <div class="wrapper">
+                            <input type="checkbox" id="switch5">
+                            <label for="switch5" class="switch_label">
+                            <span class="onf_btn"></span>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <div class="quick_btn">
+                    <div class="quick_used">
+                        <p>기기 오류</p>
+                        <div class="wrapper">
+                            <input type="checkbox" id="switch6">
+                            <label for="switch6" class="switch_label">
+                            <span class="onf_btn"></span>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <div class="quick_btn">
+                    <div class="quick_used">
+                        <p>반혈 못함</p>
+                        <div class="wrapper">
+                            <input type="checkbox" id="switch7">
+                            <label for="switch7" class="switch_label">
+                            <span class="onf_btn"></span>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <div class="quick_btn">
+                    <div class="quick_used">
+                        <p>RBC 혼입</p>
+                        <div class="wrapper">
+                            <input type="checkbox" id="switch8">
+                            <label for="switch8" class="switch_label">
+                            <span class="onf_btn"></span>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <div class="quick_btn">
+                    <div class="quick_used">
+                        <p>바늘교체</p>
+                        <div class="wrapper">
+                            <input type="checkbox" id="switch9">
+                            <label for="switch9" class="switch_label">
+                            <span class="onf_btn"></span>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <div class="quick_btn">
+                    <div class="quick_used">
+                        <p>기타</p>
+                        <div class="wrapper">
+                            <input type="checkbox" id="switch10">
+                            <label for="switch10" class="switch_label">
+                            <span class="onf_btn"></span>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> -->
+        <div class="na">성분채혈 특이사항</div>
+    </div>
+</body>
+</html>

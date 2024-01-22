@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="target-densitydpi=medium-dpi, width=750">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+    <title>Smart Bims</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+    <div id="wrap">
+        <header>
+            <a href="javascript:;" class="back_btn"><img src="images/header_back_icon.png" alt=""></a>
+            <h1 class="page_tit">검체 및 냉매체 입력</h1>
+            <a href="javascript:;" class="home_btn"><img src="images/header_home_icon.png" alt=""></a>
+        </header>
+        <div class="main_wrap">
+            <div class="code_box">
+                <div class="name">검체입력</div>
+                <ul>
+                    <li>
+                        <div class="code_name">헌혈검체</div>
+                        <div class="code">
+                            <input type="text" class="code_num">
+                        </div>
+                    </li>
+                    <li>
+                        <div class="code_name">특검검체</div>
+                        <div class="code">
+                            <input type="text" class="code_num half sit"><strong>건</strong>
+                            <input type="text" class="code_num half sit"><strong>개</strong>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="code_name">등록검체</div>
+                        <div class="code">
+                            <input type="text" class="code_num">
+                        </div>
+                    </li>
+                    <li>
+                        <div class="code_name">기타검체</div>
+                        <div class="code">
+                            <input type="text" class="code_num">
+                        </div>
+                    </li>
+                    <li>
+                        <div class="code_name">안정성 의뢰</div>
+                        <div class="code">
+                            <input type="text" class="code_num half sit"><strong>건</strong>
+                            <input type="text" class="code_num half sit"><strong>개</strong>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="code_name">연구용 검체</div>
+                        <div class="code">
+                            <input type="text" class="code_num">
+                        </div>
+                    </li>
+                    <li>
+                        <div class="code_name">조혈모세포 기증</div>
+                        <div class="code">
+                            <input type="text" class="code_num">
+                        </div>
+                    </li>
+                    <li>
+                        <div class="code_name">Rh(-) 긴급 검체</div>
+                        <div class="code">
+                            <input type="text" class="code_num">
+                        </div>
+                    </li>
+                </ul>
+                <div class="sample_box">
+                    <div class="name">기록카드 수량</div>
+                    <div class="code_list sp_bt">
+                        <dl>
+                            <dt>헌혈</dt>
+                            <dd>
+                                <input type="text" class="code_num card">
+                            </dd>
+                        </dl>
+                        <dl>
+                            <dt>e-헌혈</dt>
+                            <dd>
+                                <input type="text" class="code_num card">
+                            </dd>
+                        </dl>
+                        <dl>
+                            <dt>부적격</dt>
+                            <dd>
+                                <input type="text" class="code_num card">
+                            </dd>
+                        </dl>
+                        <dl>
+                            <dt>e-부적격</dt>
+                            <dd>
+                                <input type="text" class="code_num card">
+                            </dd>
+                        </dl>
+                    </div>
+                </div>
+                <div class="sample_box">
+                    <div class="name">냉매체 사용 수량</div>
+                    <div class="code_list block">
+                        <dl>
+                            <dt>아이스팩</dt>
+                            <dd>
+                                <input type="text" class="code_num">
+                            </dd>
+                        </dl>
+                        <dl>
+                            <dt>PCM냉매제</dt>
+                            <dd>
+                                <input type="text" class="code_num">
+                            </dd>
+                        </dl>
+                        <dl class="line">
+                            <dt>혈액박스 수량</dt>
+                            <dd>
+                                <input type="text" class="code_num">
+                            </dd>
+                        </dl>
+                    </div>
+                </div>
+            </div>
+            <div class="check_box center">
+                <button type="button" class="check">다음</button>
+            </div>
+            <div class="user_btn_box">
+                <a href="javascript:;">입력 초기화</a>
+                <a href="javascript:;">임시저장</a>
+                <a href="javascript:;">임시저장 불러오기</a>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+    <script src="js/jquery-3.6.4.min.js"></script>
+    <script src="js/swiper.min.js"></script>
+    <script src="js/common.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="target-densitydpi=medium-dpi, width=750">
+	<meta http-equiv="Content-Type" content="number/ placeholder="0"html; charset=utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+    <title>Smart Bims</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+    <div id="wrap">
+        <header>
+            <a href="javascript:;" class="back_btn"><img src="images/header_back_icon.png" alt=""></a>
+            <h1 class="page_tit">혈액인계정보 수정</h1>
+            <a href="javascript:;" class="home_btn"><img src="images/header_home_icon.png" alt=""></a>
+        </header>
+        <!-- 팝업 -->
+        <div class="layer_dimm"></div>
+        <div class="warning_box">
+            <div class="table_box">
+                <h2 class="table_tit">헌혈검체</h2>
+                <div class="table_list">
+                    <div class="left_sec">
+                        <dl>
+                            <dt>헌혈검체</dt>
+                            <dd>0</dd>
+                        </dl>
+                        <dl>
+                            <dt>등록검체</dt>
+                            <dd>0</dd>
+                        </dl>
+                        <dl>
+                            <dt>안전성의뢰</dt>
+                            <dd><p>0건</p><p>0개</p></dd>
+                        </dl>
+                        <dl>
+                            <dt>조혈모세포</dt>
+                            <dd>0</dd>
+                        </dl>
+                    </div>
+                    <div class="right_sec">
+                        <dl>
+                            <dt>특검검체</dt>
+                            <dd><p class="red">0건</p><p class="red">2개</p></dd>
+                        </dl>
+                        <dl>
+                            <dt>기타검체</dt>
+                            <dd>0</dd>
+                        </dl>
+                        <dl>
+                            <dt>연구용검체</dt>
+                            <dd>0</dd>
+                        </dl>
+                        <dl>
+                            <dt>Rh(-)</dt>
+                            <dd>0</dd>
+                        </dl>
+                    </div>
+                </div>
+                <div class="table_box">
+                    <h2 class="table_tit">헌혈검체</h2>
+                    <div class="table_list">
+                        <div class="left_sec">
+                            <dl>
+                                <dt>헌혈</dt>
+                                <dd>0</dd>
+                            </dl>
+                            <dl>
+                                <dt>부적격</dt>
+                                <dd>0</dd>
+                            </dl>
+                        </div>
+                        <div class="right_sec">
+                            <dl>
+                                <dt>e-헌혈</dt>
+                                <dd>0</dd>
+                            </dl>
+                            <dl>
+                                <dt>e-부적격</dt>
+                                <dd>0</dd>
+                            </dl>
+                        </div>
+                    </div>
+                </div>
+                <div class="table_box">
+                    <h2 class="table_tit">냉매제 사용 수량</h2>
+                    <div class="table_list">
+                        <div class="left_sec">
+                            <dl>
+                                <dt>아이스팩</dt>
+                                <dd>0</dd>
+                            </dl>
+                            <dl>
+                                <dt>혈액박스 수</dt>
+                                <dd>0</dd>
+                            </dl>
+                        </div>
+                        <div class="right_sec">
+                            <dl>
+                                <dt>PCM</dt>
+                                <dd>2</dd>
+                            </dl>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="check_box">
+                <button type="button" class="check">확인</button>
+                <button type="button" class="cancel size">취소</button>
+            </div>
+        </div>
+        <!-- 팝업 END -->
+        <div class="section" style="background: #f7f7f7;">
+            <div class="main_wrap">
+                <div class="code_box">
+                    <ul>
+                        <li>
+                            <div class="code_name">헌혈검체</div>
+                            <div class="code">
+                                <p>0</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="code_name">특검검체</div>
+                            <div class="code">
+                                <input type="number" placeholder="0" class="code_num half sit"><strong>건</strong>
+                                <input type="number" placeholder="0" class="code_num half sit"><strong>개</strong>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="code_name">등록검체</div>
+                            <div class="code">
+                                <input type="number" placeholder="0" class="code_num">
+                            </div>
+                        </li>
+                        <li>
+                            <div class="code_name">기타검체</div>
+                            <div class="code">
+                                <input type="number" placeholder="0" class="code_num">
+                            </div>
+                        </li>
+                        <li>
+                            <div class="code_name">안정성 의뢰</div>
+                            <div class="code">
+                                <input type="number" placeholder="0" class="code_num half sit"><strong>건</strong>
+                                <input type="number" placeholder="0" class="code_num half sit"><strong>개</strong>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="code_name">연구용 검체</div>
+                            <div class="code">
+                                <input type="number" placeholder="0" class="code_num">
+                            </div>
+                        </li>
+                        <li>
+                            <div class="code_name">조혈모세포 기증</div>
+                            <div class="code">
+                                <input type="number" placeholder="0" class="code_num">
+                            </div>
+                        </li>
+                        <li>
+                            <div class="code_name">Rh(-) 긴급 검체</div>
+                            <div class="code">
+                                <input type="number" placeholder="0" class="code_num">
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="section" style="background: #e1ffe4;">
+            <div class="main_wrap">
+                <div class="code_box">
+                    <ul>
+                        <li>
+                            <div class="code_name">헌혈 기록 카드 수량</div>
+                            <div class="code">
+                                <p>0</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="code_name">e-헌혈 기록카드 수량</div>
+                            <div class="code">
+                                <p>0</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="code_name">부적격 기록카드 수량</div>
+                            <div class="code">
+                                <input type="number" placeholder="0" class="code_num">
+                            </div>
+                        </li>
+                        <li>
+                            <div class="code_name">e-부적격 기록카드 수량</div>
+                            <div class="code">
+                                <input type="number" placeholder="0" class="code_num">
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="section" style="background: #ede9ff;">
+            <div class="main_wrap">
+                <div class="code_box">
+                    <ul>
+                        <li>
+                            <div class="code_name">아이스팩 냉메제 수량</div>
+                            <div class="code">
+                                <input type="number" placeholder="0" class="code_num">
+                            </div>
+                        </li>
+                        <li>
+                            <div class="code_name">PCM냉메제 수량</div>
+                            <div class="code">
+                                <input type="number" placeholder="0" class="code_num">
+                            </div>
+                        </li>
+                        <li>
+                            <div class="code_name">혈액박스 수량</div>
+                            <div class="code">
+                                <input type="number" placeholder="0" class="code_num">
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="padding_bot">
+            <div class="check_box center">
+                <button type="button" class="change">수정</button>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+    <script src="js/jquery-3.6.4.min.js"></script>
+    <script src="js/swiper.min.js"></script>
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+        pagination: {
+            el: ".swiper-pagination",
+        },
+        });
+    </script>
+    <script src="js/common.js"></script>
+
+</body>
+</html>

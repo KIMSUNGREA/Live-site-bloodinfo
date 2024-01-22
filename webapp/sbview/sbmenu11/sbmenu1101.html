@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="target-densitydpi=medium-dpi, width=750">
+	<meta http-equiv="Content-Type" content="number/ placeholder="0"html; charset=utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+    <title>Smart Bims</title>
+    <link rel="stylesheet" href="../../css/sbcss/reset.css">
+    <link rel="stylesheet" href="../../css/sbcss/style.css">
+    <link rel="stylesheet" href="../../css/sbcss/jquery-ui.min.css">
+    <link rel="stylesheet" href="../../css/sbcss/jquery-ui.css">
+    <link rel="stylesheet" href="../../css/sbcss/swiper.min.css">
+
+    <script src="../../js/sbjs/jquery-3.6.4.min.js"></script>
+    <script src="../../js/sbjs/swiper.min.js"></script>
+    <script src="../../js/sbjs/jquery-ui.min.js"></script>
+    <script src="../../js/sbjs/common.js"></script>
+</head>
+<body>
+    <div id="wrap">
+        <header>
+            <a href="javascript:;" class="back_btn"><img src="../../images/sbcom/header_back_icon.png" alt=""></a>
+            <h1 class="page_tit">혈액인계정보 조회</h1>
+            <a href="javascript:;" class="home_btn"><img src="../../images/sbcom/header_home_icon.png" alt=""></a>
+        </header>
+        <!-- 팝업 -->
+        <div class="layer_dimm"></div>
+        <div class="warning_box">
+            <div class="table_box">
+                <h2 class="table_tit">헌혈검체</h2>
+                <div class="table_list">
+                    <div class="left_sec">
+                        <dl>
+                            <dt>헌혈검체</dt>
+                            <dd>0</dd>
+                        </dl>
+                        <dl>
+                            <dt>등록검체</dt>
+                            <dd>0</dd>
+                        </dl>
+                        <dl>
+                            <dt>안전성의뢰</dt>
+                            <dd class="np"><p>0건</p><p>0개</p></dd>
+                        </dl>
+                        <dl>
+                            <dt>조혈모세포</dt>
+                            <dd>0</dd>
+                        </dl>
+                    </div>
+                    <div class="right_sec">
+                        <dl>
+                            <dt>특검검체</dt>
+                            <dd class="np"><p class="red">0건</p><p class="red">2개</p></dd>
+                        </dl>
+                        <dl>
+                            <dt>기타검체</dt>
+                            <dd>0</dd>
+                        </dl>
+                        <dl>
+                            <dt>연구용검체</dt>
+                            <dd>0</dd>
+                        </dl>
+                        <dl>
+                            <dt>Rh(-)</dt>
+                            <dd>0</dd>
+                        </dl>
+                    </div>
+                </div>
+                <div class="table_box">
+                    <h2 class="table_tit">헌혈검체</h2>
+                    <div class="table_list">
+                        <div class="left_sec">
+                            <dl>
+                                <dt>헌혈</dt>
+                                <dd>0</dd>
+                            </dl>
+                            <dl>
+                                <dt>부적격</dt>
+                                <dd>0</dd>
+                            </dl>
+                        </div>
+                        <div class="right_sec">
+                            <dl>
+                                <dt>e-헌혈</dt>
+                                <dd>0</dd>
+                            </dl>
+                            <dl>
+                                <dt>e-부적격</dt>
+                                <dd>0</dd>
+                            </dl>
+                        </div>
+                    </div>
+                </div>
+                <div class="table_box">
+                    <h2 class="table_tit">냉매제 사용 수량</h2>
+                    <div class="table_list">
+                        <div class="left_sec">
+                            <dl>
+                                <dt>아이스팩</dt>
+                                <dd>0</dd>
+                            </dl>
+                            <dl>
+                                <dt>혈액박스 수</dt>
+                                <dd>0</dd>
+                            </dl>
+                        </div>
+                        <div class="right_sec">
+                            <dl>
+                                <dt>PCM</dt>
+                                <dd>2</dd>
+                            </dl>
+                            <dl>
+                                
+                            </dl>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="check_box space_ar">
+                <button type="button" class="cancel">취소</button>
+                <button type="button" class="check size">확인</button>
+            </div>
+        </div>
+        <!-- 팝업 END -->
+
+
+
+
+
+
+
+
+
+
+        <!-- main START -->
+        <div class="main_wrap half">
+            <div class="blood_donor">
+                <dl>
+                    <dt>- 총 인계차수</dt>
+                    <dd>2/3</dd>
+                </dl>
+                <dl>
+                    <dt>- 총 인계혈액</dt>
+                    <dd>0</dd>
+                </dl>
+                <a href="javascript:;" style="background: #fff;">수정</a>
+            </div>
+            <div id="swper" class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="table_box pt_none">
+                        <div class="table_list">
+                            <div class="left_sec">
+                                <dl class="heit">
+                                    <dt class="pl">특검검체</dt>
+                                    <dd class="main text_cen">0/0</dd>
+                                </dl>
+                                <dl class="heit">
+                                    <dt class="pl">안전성의뢰</dt>
+                                    <dd class="main text_cen">0/0</dd>
+                                </dl>
+                                <dl class="heit">
+                                    <dt class="pl two">조혈모<br>세포기증</dt>
+                                    <dd class="main">0</dd>
+                                </dl>
+                                <dl class="heit">
+                                    <dt class="pl">등록검체</dt>
+                                </dl>
+                            </div>
+                            <div class="right_sec">
+                                <dl>
+                                    <dt class="pl">기타검체</dt>
+                                    <dd class="main">0</dd>
+                                </dl>
+                                <dl>
+                                    <dt class="pl">연구용 검체</dt>
+                                    <dd class="main">0</dd>
+                                </dl>
+                                <dl>
+                                    <dt class="pl">Rh(-)긴급</dt>
+                                    <dd class="main">0</dd>
+                                </dl>
+                                <dl>
+                                    <dd class="main mgin_auto">0</dd>
+                                </dl>
+                            </div>
+                        </div>
+                        <div class="table_box">
+                            <div class="table_list">
+                                <div class="left_sec">
+                                    <dl>
+                                        <dt class="pl">아이스팩</dt>
+                                        <dd class="main">0</dd>
+                                    </dl>
+                                </div>
+                                <div class="right_sec">
+                                    <dl>
+                                        <dt class="pl">PCM냉매제</dt>
+                                        <dd class="main">2</dd>
+                                    </dl>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="table_box">
+                            <div class="table_list">
+                                <div class="left_sec">
+                                    <dl>
+                                        <dt class="pl">혈액수량</dt>
+                                        <dd class="main">0</dd>
+                                    </dl>
+                                    <dl>
+                                        <dt class="pl two">헌혈기록<br>카드</dt>
+                                        <dd class="main">0</dd>
+                                    </dl>
+                                    <dl>
+                                        <dt class="pl two">부적격헌혈 기록카드</dt>
+                                        <dd class="main">0</dd>
+                                    </dl>
+                                    <dl>
+                                        <dt class="pl">지정헌혈</dt>
+                                        <dd class="main">0</dd>
+                                    </dl>
+                                </div>
+                                <div class="right_sec">
+                                    <dl>
+                                        <dt class="pl">혈액검체</dt>
+                                        <dd class="main">2</dd>
+                                    </dl>
+                                    <dl>
+                                        <dt class="pl">e-기록카드</dt>
+                                        <dd class="main">0</dd>
+                                    </dl>
+                                    <dl>
+                                        <dt class="pl two">e-부적격 기록카드</dt>
+                                        <dd class="main">0</dd>
+                                    </dl>
+                                    <dl>
+                                        <dt class="pl">Rh(-)긴급</dt>
+                                        <dd class="main">0</dd>
+                                    </dl>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="table_box">
+                            <div class="table_list">
+                                <div class="left_sec">
+                                    <dl>
+                                        <dt class="pl two" style="background: #ffd633;">말라리아<br>제한</dt>
+                                        <dd class="main">0</dd>
+                                    </dl>
+                                </div>
+                                <div class="right_sec">
+                                    <dl>
+                                        <dt class="pl two">혈액박스<br>수량</dt>
+                                        <dd class="main">0</dd>
+                                    </dl>
+                                </div>
+                            </div>
+                            <div class="test_save">
+                                <p>수거자 테스트</p>
+                                <p>저장일시 <span>10:43:55</span></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">Slide 2</div>
+                <div class="swiper-slide">Slide 3</div>
+                <div class="swiper-slide">Slide 4</div>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+    </div>
+    <!-- main END -->
+    <script>
+    var swiper = new Swiper(".mySwiper", {
+    pagination: {
+        el: ".swiper-pagination",
+    },
+    });
+    </script>
+</body>
+</html>
